@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+        <div class="container">
+        <form action="" method="post">
+            {% csrf_token %}
+            <br><label for="question">Enter question: </label><br>
+            <input
+              id="question"
+              type="text"
+              name="question"/>
+    
+              <br><label for="cho1">Choice 1:</label><br>
+              <input type="text" id="cho1" name="cho1"><br>
+    
+              <label for="cho2">Choice 2:</label><br>
+              <input type="text" id="cho2" name="cho2"><br>
+    
+              <label for="cho3">Choice 3:</label><br>
+              <input type="text" id="cho3" name="cho3"><br>
+    
+              <label for="cho4">Choice 4:</label><br>
+              <input type="text" id="cho4" name="cho4"><br>
+
+              <label for="ans">Ans :</label><br>
+              <input type="text" id="ans" name="ans"><br>
+            <br><input type="submit" value="submit" />
+          </form>
+    
+    </div>    
+</body>
+</html>
+
+{% comment %} <br><label for="question">Enter question: </label><br>
+            <input
+              id="question"
+              type="text"
+              name="name_field"/>
+    
+              <br><label for="cho1">Choice 1:</label><br>
+              <input type="text" id="cho1" name="cho1"><br>
+    
+              <label for="cho2">Choice 2:</label><br>
+              <input type="text" id="cho2" name="cho2"><br>
+    
+              <label for="cho3">Choice 3:</label><br>
+              <input type="text" id="cho3" name="cho3"><br>
+    
+              <label for="cho4">Choice 4:</label><br>
+              <input type="text" id="cho4" name="cho4"><br>
+     {% endcomment %}
